@@ -1,0 +1,16 @@
+{
+  "name": "dsh-profile-desktop",
+  "private": true,
+  "dependencies": {
+    "dsh-plugin-task-panel": "file:./plugins/dsh-plugin-task-panel",
+    "dsh-plugin-linus-ssh": "file:./plugins/dsh-plugin-linus-ssh"
+  },
+  "dsh": {
+    "profile": {
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-web-app"
+      ]
+    }
+  }
+}
