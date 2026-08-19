@@ -6,4 +6,6 @@
       name: dsh-plugin-task-panel
     - id: linus-ssh
       name: dsh-plugin-linus-ssh
+    - id: workspace-native
+      name: dsh-plugin-workspace-native
 

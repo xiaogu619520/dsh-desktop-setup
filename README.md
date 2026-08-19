@@ -6,9 +6,10 @@
 
 ## 里面有什么
 
-- `plugins/dsh-plugin-task-panel`：任务摘要与上下文用量浮动面板
+- `plugins/dsh-plugin-workspace-native`：**Windows 原生文件夹选择对话框与文件夹拖拽工作区支持**（带桌面、此电脑、各个盘符）
+- `plugins/dsh-plugin-task-panel`：任务摘要与上下文用量浮动面板（`Ctrl + Alt + B`）
 - `plugins/dsh-plugin-linus-ssh`：常驻 OpenSSH 工具，让 AI 连 Linux 服务器
-- `profile/`：desktop profile 的 `package.json` 和 `cordis.patch.yml`
+- `profile/`：desktop profile 的 `package.json`、`cordis.patch.yml` 和 `pnpm-workspace.yaml`
 - `templates/settings.yaml.example`：模型路由模板（hu / lin / gemini）
 - `templates/credentials.yaml.example`：凭据文件模板（只有占位符）
 
@@ -41,7 +42,7 @@ Copy-Item -Force "$env:TEMP\dsh-desktop-setup\profile\pnpm-workspace.yaml" "$pro
 也可以在 DSH 里直接对 AI 说：
 
 ```text
-帮我安装并启用这两个 DSH 插件：
+帮我安装并启用这些 DSH 插件：
 https://github.com/xiaogu619520/dsh-plugin-task-panel.git
 https://github.com/xiaogu619520/dsh-plugin-linus-ssh.git
 ```
@@ -62,8 +63,9 @@ notepad "$env:USERPROFILE\.dsh\.credentials.yaml"
 
 重启后应能看到：
 
-- 任务面板（`Ctrl + Alt + B`）
-- Linus SSH 常驻工具
+- **原生系统文件夹选择框**：点击添加工作区直接打开 Windows 原生资源管理器对话框（带桌面、此电脑、C/D/E/F 盘），且支持直接将文件夹拖入窗口作为工作区
+- **任务面板**（`Ctrl + Alt + B`）
+- **Linus SSH** 常驻工具
 
 ## 单独仓库
 

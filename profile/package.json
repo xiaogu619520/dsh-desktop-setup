@@ -3,7 +3,8 @@
   "private": true,
   "dependencies": {
     "dsh-plugin-task-panel": "file:./plugins/dsh-plugin-task-panel",
-    "dsh-plugin-linus-ssh": "file:./plugins/dsh-plugin-linus-ssh"
+    "dsh-plugin-linus-ssh": "file:./plugins/dsh-plugin-linus-ssh",
+    "dsh-plugin-workspace-native": "file:./plugins/dsh-plugin-workspace-native"
   },
   "dsh": {
     "profile": {
