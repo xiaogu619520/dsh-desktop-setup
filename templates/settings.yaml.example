@@ -1,0 +1,41 @@
+# Copy this file to ~/.dsh/settings.yaml and fill in your own provider endpoints.
+# Never commit real API keys or private server IPs.
+
+ui-onboarding:
+  welcomeNoticeVersion: 2026-08-13.1
+
+agent-default-model:
+  provider: hu
+  model: "grok-4.6"
+
+llm-pi-ai:
+  providers:
+    hu:
+      apiKeyEnv: HU_API_KEY
+      api: openai-responses
+      baseURL: https://api.your-provider.com/v1
+      models:
+        - id: grok-4.6
+          input:
+            - text
+            - image
+    lin:
+      apiKeyEnv: LIN_API_KEY
+      api: openai-completions
+      baseURL: https://api.your-provider.com/v1
+      models:
+        - id: gpt-5.6-sol
+          input:
+            - text
+            - image
+    gemini:
+      displayName: "3.7"
+      apiKeyEnv: GEMINI_API_KEY
+      api: openai-completions
+      baseURL: https://api.your-provider.com/v1
+      models:
+        - id: "[anti]gemini-3.7-flash"
+          name: "[anti]gemini-3.7-flash"
+          input:
+            - text
+            - image
